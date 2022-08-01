@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>APP TAB example | Pseudo</title>
+  <style>
+  .tabs {
+    /*border: 1px dotted black;*/
+    
+    list-style: none;
+    padding: 10px;
+    margin: 20px;
+  }
+  .tabs-item {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    display: inline-block;
+
+    width: 97px;
+
+    padding: 20px 10px;
+    margin: 5px;
+    text-align: center;
+    transition: 0.35s;
+    height: 90px;
+  }
+  .tabs-item:hover {
+    background-color: #cccccc;
+  }
+  .tabs-img {
+    margin-bottom: 20px;
+  }
+  .tabs-link {
+    text-decoration: none;
+    color: #333;
+  }
+  .tabs-options {
+    font-size: 20px;
+    line-height: 5px;
+    background-color: #999999;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    transform: translateX(80px) translateY(-107px);
+    /*new*/
+    opacity: 0.0;
+  }
+  .tabs-options:hover {
+    opacity: 1.0;
+  }
+
+  </style>
+</head>
+<body>
+  <ul class="tabs">
+    <li  
+      class="tabs-item"
+      title="access this account"
+      >
+      <a href="#" class="tabs-link">
+        <img class="tabs-img" src="https://icons.iconarchive.com/icons/bokehlicia/captiva/48/web-github-icon.png">
+        <br>
+        username_here
+      </a>
+      <div class="tabs-options">
+        .<br>.<br>.
+      </div>
+    </li>
+
+    <li 
+      class="tabs-item"
+      title="access email">
+      <a href="#" class="tabs-link">
+        <img class="tabs-img" src="https://icons.iconarchive.com/icons/ampeross/qetto-2/48/mail-icon.png">
+      <br>
+      Inbox
+      </a> 
+      <div class="tabs-options">
+        .<br>.<br>.
+      </div>
+    </li>
+    <li 
+      class="tabs-item"
+      title="access this site">
+      <a href="#" class="tabs-link">
+        <img class="tabs-img" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/youtube-icon.png">
+      <br>
+      YouTube
+      </a>
+      <div class="tabs-options">
+        .<br>.<br>.
+      </div>
+      
+    </li>
+  </ul>
+</body>
+</html>

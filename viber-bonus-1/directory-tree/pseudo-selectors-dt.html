@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Directory Tree | CSS Pseudo Selectors</title>
+  <style>
+    body {
+      background-color: #222;
+    }
+    .tree {
+      color: white;
+      font-family: Arial;
+      font-size: 64px;
+
+    }
+    .folder {
+      /*new*/
+      /*border: 1px solid red;*/
+      background-image: url(images/Actions-document-open-icon.png);
+      background-repeat: no-repeat;
+      
+      padding: 24px 0 24px 72px; /* 0 - no units!!!*/
+      /*height: 18px;*/
+      line-height: 18px;
+      /*new*/
+      list-style-type: "┣";
+      
+    }
+    .folder:hover {
+      background-image: url(images/Documents-icon.png);
+
+    }
+
+    .folder:last-child:hover {
+      background-image: url(images/Actions-go-previous-view-icon.png);
+    }
+
+
+    .file {
+      /*new*/
+      /*border: 1px solid red;*/
+      background-image: url(images/Actions-document-properties-icon.png);
+      background-repeat: no-repeat;
+      
+      padding: 24px 0 24px 72px; /* 0 - no units!!!*/
+      /*height: 18px;*/
+      line-height: 18px;
+      /*new*/
+      list-style-type: "┣";
+      
+    }
+
+    .file:hover {
+      background-image: url(images/Actions-document-edit-icon.png);
+    }
+    .file:last-child {
+      list-style-type: "┗";
+    }
+      /*new*/
+      .folder:last-child {
+        list-style-type: "┗";
+      }
+    .empty {
+      background-image: url(images/Actions-document-open-folder-icon.png);
+    }
+    .name {
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+  <ul class="tree">
+    <li class="folder">
+      <div class="name">PROJECT [DONE]</div>
+      <!--nested list-->
+      <ul class="tree">
+        <li  class="file">
+          <div class="name">File 1</div> 
+        </li>
+        <li class="file">
+          <div class="name">File 2</div>  
+        </li >
+      </ul>
+
+    </li>
+
+    <li class="folder">
+      <div class="name">PROJECT [NOW]</div>
+    </li>
+      <!--NEW - the same element can have multiple classes
+          overriding
+        -->
+    <li class="folder empty">
+      <div class="name">PROJECT [TBD]</div>
+    </li>
+
+  </ul>
+</body>
+</html>

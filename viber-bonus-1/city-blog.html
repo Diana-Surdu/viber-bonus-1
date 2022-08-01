@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Block</title>
+  <style>
+    body {
+      background-color: #222;
+    }
+
+    #city {
+      background-color: #F0F8FF;
+      width: 400px;
+      height: 400px;
+      border: 5px solid #5F9EA0;
+    }
+    #square {
+      background-color: DarkGrey;
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      margin-right: -4px;
+      color: white;
+
+      font-size: 50px;
+      vertical-align: top;
+      text-align: center;
+      line-height: 150px;
+    }
+    .streetB {
+      background-color: #696969;
+      width: 150px;
+      height: 250px;
+      display: inline-block;
+      margin-right: -4px;;
+    }
+
+    .streetA {
+      background-color: rgb(220, 220, 220);
+      width: 250px;
+      height: 150px;
+      display: inline-block;
+    }
+    .left-band {
+      border-right: 2px solid white;
+      width: 73px;
+      height: inherit;
+      display: inline-block;
+  
+    }
+    .band-marker-v {
+      border-right: 2px dashed FloralWhite;
+      height: inherit;
+      width: 34px;
+    }
+    .right-band {
+      display: inline-block;
+    }
+
+    .orizontal-band {
+      border-bottom: 2px solid FloralWhite;
+      width: inherit;
+      height: 73px;
+      display: inline-block;
+    }
+    .band-marker-o {
+      border-bottom: 2px dashed FloralWhite;
+      width: inherit;
+      height: 34px;
+    }
+
+    .band-marker-ob {
+      border-bottom: 2px dashed FloralWhite;
+      width: inherit;
+      height: 34px;
+    }
+  .park {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 50px;
+    text-align: center;
+    line-height: 83px;
+  }
+  </style>
+</head>
+<body>
+  
+  <div id="city">
+    <div id="square">
+      ♞
+    </div>
+
+    <div class="streetA">
+      <div class="orizontal-band">
+          <div class="band-marker-o">
+          
+          </div>
+      </div>
+      <div class="band-marker-ob">
+
+      </div>
+    </div>
+
+    <div class="streetB">
+      <div class="left-band">
+        <div class="band-marker-v">
+          
+        </div>
+      </div>
+      <div class=" right-band band-marker-v">
+        
+      </div>
+    </div>
+    <div class="park">
+      🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲 
+    </div>
+  </div>
+
+</body>
+</html>

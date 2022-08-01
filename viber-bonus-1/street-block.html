@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Street BLOCK</title>
+  <style>
+    body {
+      background-color: #223;
+    }
+    .street {
+      border: 1px dotted red;
+    }
+    .house {
+      width: 100px;
+      height: 150px;
+      /*border: 1px solid green;*/
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+    .house-wall {
+      background-color: antiquewhite;
+      height: 80px;
+    }
+    .house-window {
+      width: 30px;
+      height: 30px;
+      border: 2px solid brown;
+
+      transform: translateX(33px) translateY(23px);
+    }
+    .window-section {
+      width: 13px;
+      height: inherit;
+      border-right: 1px solid brown;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: -4px;
+    }
+    .window-section-r {
+      width: 16px;
+      height: 14px;
+      border-bottom: 1px solid brown;
+      display: inline-block;
+      vertical-align: top;
+
+    }
+
+    .house-roof {
+      width: 0px;
+      height: 0px;
+      /*background-color: red;*/
+      /*Triangle*/
+      border: 50px solid white;
+      border-top-width: 0px;
+      border-bottom-color: brown;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-width: 70px;
+
+    }
+
+    .building-tall {
+      display: inline-block;
+      height: 300px;
+      width: 100px;
+      background-color: beige;
+      vertical-align: bottom;
+    }
+    .building-tall-w {
+      width: 25px;
+      height: 70px;
+      border: 1px solid gray;
+    }
+    .building-tall-w1 {
+      display: inline-block;
+      margin-left: 18px;
+      margin-right: 4px;
+      margin-top: 15px;
+    }
+    .building-tall-w2 {
+      display: inline-block;
+    }
+    .building-tall-w3 {
+      display: inline-block;
+      margin-left: 18px;
+      margin-right: 4px;
+      margin-top: 15px;
+    }
+    .building-tall-w4 {
+      display: inline-block;
+    }
+    .building-tall-w5 {
+      display: inline-block;
+      margin-left: 18px;
+      margin-right: 4px;
+      margin-top: 15px;
+    }
+    .building-tall-w6 {
+      display: inline-block;
+    }
+    
+    .cloud {
+      width: 50px;
+      /*background-color: #fff;*/
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 20px;
+      padding-top: 50px;
+    }
+    .park {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-bottom: -6px;
+    }
+    .building-small {
+      display: inline-block;
+      vertical-align: bottom;
+      background-color: rgb(183, 140, 140);
+      height: 100px;
+      width: 200px; 
+    }
+
+    .building-small-w {
+      border: 1px solid rgb(125, 24, 24);
+      width: 40px;
+      height: 25px;
+      margin-top: 10px;
+      margin-left: 17px;
+    }
+
+    .building-small-w1 {
+      display: inline-block;
+    }
+
+    .building-small-w2 {
+      display: inline-block;
+    }
+
+    .building-small-w3 {
+      display: inline-block;
+    }
+    .building-small-w4 {
+      display: inline-block;
+    }
+    .building-small-w5 {
+      display: inline-block;
+    }
+
+    .building-small-w6 {
+      display: inline-block;
+    }
+
+    
+
+
+    
+    
+  </style>
+</head>
+<body>
+  <div class="street">
+    <div class="house">
+      <div class="house-roof">
+        
+      </div>
+      <div class="house-wall">
+        <div class="house-window">
+            <div class="window-section">
+    
+            </div>
+            <div class="window-section-r">
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="building-tall">
+      <div class="building-tall-w building-tall-w1 "></div>
+      <div class="building-tall-w building-tall-w2 "></div>
+      <div class="building-tall-w building-tall-w3 "></div>
+      <div class="building-tall-w building-tall-w4 "></div>
+      <div class="building-tall-w building-tall-w5 "></div>
+      <div class="building-tall-w building-tall-w6 "></div>
+    </div>
+    <div class="cloud">
+      <img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/48/cloud-icon.png" alt="it's a cloud">
+    </div>
+    <div class="park">
+      <img src="https://icons.iconarchive.com/icons/sonya/swarm/96/Park-icon.png" alt="">
+    </div>
+    
+    <div class="building-small"> 
+      <div class="building-small-w building-small-w1 "></div>
+      <div class="building-small-w building-small-w2 "></div>
+      <div class="building-small-w building-small-w3 "></div>
+      <div class="building-small-w building-small-w4 "></div>
+      <div class="building-small-w building-small-w5 "></div>
+      <div class="building-small-w building-small-w6 "></div>
+    </div>
+  </div>
+</body>
+</html>
